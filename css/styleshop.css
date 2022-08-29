@@ -311,13 +311,13 @@ nav .app .useflex .text ul li a:hover {
 .bodylist .all .rightcontent .appcontentbody .childcontentbody {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
     border-bottom: 1px solid #9999992b;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 
 .bodylist .all .rightcontent .appcontentbody .childcontentbody .leftimg {
-    width: 30%;
+    width: 23%;
 }
 
 .bodylist .all .rightcontent .appcontentbody .childcontentbody .leftimg img {
@@ -329,13 +329,13 @@ nav .app .useflex .text ul li a:hover {
 }
 
 .appcontentbody .childcontentbody .righttext h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
     color: #555;
 }
 
 .appcontentbody .childcontentbody .righttext ul {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .appcontentbody .childcontentbody .righttext ul li {
@@ -366,7 +366,7 @@ nav .app .useflex .text ul li a:hover {
 .appcontentbody .childcontentbody .righttext p {
     color: #555;
     font-size: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .appcontentbody .childcontentbody .righttext button {
