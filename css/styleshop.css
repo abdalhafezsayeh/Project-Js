@@ -317,7 +317,7 @@ nav .app .useflex .text ul li a:hover {
 }
 
 .bodylist .all .rightcontent .appcontentbody .childcontentbody .leftimg {
-    width: 23%;
+    width: 20%;
 }
 
 .bodylist .all .rightcontent .appcontentbody .childcontentbody .leftimg img {
@@ -354,30 +354,31 @@ nav .app .useflex .text ul li a:hover {
 .appcontentbody .childcontentbody .righttext h4 {
     margin-bottom: 10px;
     color: #555;
+    font-size: 13px;
 }
 
 .appcontentbody .childcontentbody .righttext h4 span {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: line-through;
     color: #777;
 }
 
 .appcontentbody .childcontentbody .righttext p {
     color: #555;
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
 .appcontentbody .childcontentbody .righttext button {
     background-color: #000;
     color: #fff;
-    padding: 7px 25px;
-    font-size: 16px;
-    margin-right: 40px;
-    letter-spacing: 1.5px;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 25px;
+    letter-spacing: 0.5px;
     cursor: pointer;
-    transition: all .5s ;
+    transition: all .5s;
 }
 .appcontentbody .childcontentbody .righttext button:hover 
 {

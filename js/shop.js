@@ -2,14 +2,18 @@
 function funcOne() {
 
 // JSON 
+
 document.addEventListener("click",function(e){
 
-    console.log( e.target.value) // Test 
-    var lo = e.target.value;  
+
+        var lo = e.target.value;  
+
+
+   
 
 
 var booksJson = new XMLHttpRequest();  // Step One Initilaiz 
-booksJson.open("GET","https://www.googleapis.com/books/v1/volumes?q=" + lo);  // Step Two Server Connection 
+booksJson.open("GET","https://www.googleapis.com/books/v1/volumes?q=" + lo );  // Step Two Server Connection 
 
 booksJson.onreadystatechange = function()
 {
@@ -22,10 +26,10 @@ booksJson.onreadystatechange = function()
         // console.log(arr.items.length) // Test 
         for(var i = 0; i<arr.items.length; i++ )
         {
-            console.log(arr.items[i].volumeInfo.title)
+            // console.log(arr.items[i].volumeInfo.title) // Test 
 
             
-            console.log( document.querySelectorAll(".righttext h2")[i]) // Test 
+            // console.log( document.querySelectorAll(".righttext h2")[i]) // Test 
 
             document.querySelectorAll(".righttext h2")[i].innerHTML = arr.items[i].volumeInfo.title
             document.querySelectorAll(".righttext .authors")[i].innerHTML = arr.items[i].volumeInfo.authors
