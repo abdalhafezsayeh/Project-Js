@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="app">
+        <!-- Left Contant -->
+        <div class="leftContent">test</div>
+
+        <!-- right Content -->
+        <div class="rightContent">
+
+            <!-- Sign Up -->
+            <div class="up">
+        
+                <form action="./index.html" id="up">
+                    <h2>Sign Up</h2> 
+                    <input type="text" id="fname" name="fname" placeholder="Name"><br>
+                    <input type="text" id="lname" name="lname" placeholder="Email addess.."><br><br>
+                    <input type="password" id="lname" name="lname" placeholder="Password "><br><br>
+                    <input type="password" id="lname" name="lname" placeholder="Repeat Password "><br><br>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">I accept the terms and conditions</label><br>
+                    <!-- <input type="submit" value="Lign Up"> -->
+                    <button>Sign Up</button>
+                    <!-- Switch Bettwen sign up And Sign In -->
+                    <span class="leftSwitch" id="buttonIn" onclick="inloglog()">sign In<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                </form>
+
+
+                <form action="./index.html" id="in">
+                    <h2>Sign In</h2>
+                    <input type="text" id="lname" name="lname" placeholder="Email addess.."><br><br>
+                    <input type="password" id="lname" name="lname" placeholder="Password "><br><br>
+                    <button>Sign In</button>
+                    <!-- Switch Bettwen sign up And Sign In -->
+                    <span class="leftSwitch" id="buttonUp" onclick="uploglog()">sign Up<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                </form>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    
+
+      <script src="./loign.js   "></script>
+</body>
+</html>
