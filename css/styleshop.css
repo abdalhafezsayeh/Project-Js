@@ -293,6 +293,34 @@ nav .app .useflex .text ul li a:hover {
 .bodylist .all .rightcontent .head .centertext {
     font-size: 13px;
     color: #333;
+    width: 200px;
+    height: 25px;
+    position: relative;
+}
+.bodylist .all .rightcontent .head .centertext input
+{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.bodylist .all .rightcontent .head .centertext .search
+{
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    background-color: #555;
+    color: #FFF;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.bodylist .all .rightcontent .head .centertext .search:hover
+{
+    color: #FFF;
+    background-color: #ce7852;
 }
 
 .bodylist .all .rightcontent .head .rightsort h3 {
@@ -353,14 +381,14 @@ nav .app .useflex .text ul li a:hover {
 
 .appcontentbody .childcontentbody .righttext h4 {
     margin-bottom: 10px;
-    color: #555;
+    color: #ce7852;
     font-size: 13px;
+    text-transform: capitalize;
 }
 
 .appcontentbody .childcontentbody .righttext h4 span {
     margin-left: 10px;
-    font-size: 12px;
-    text-decoration: line-through;
+    font-size: 15px;
     color: #777;
 }
 
@@ -368,6 +396,10 @@ nav .app .useflex .text ul li a:hover {
     color: #555;
     font-size: 13px;
     margin-bottom: 20px;
+    width: 50ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .appcontentbody .childcontentbody .righttext button {

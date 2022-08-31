@@ -680,6 +680,7 @@ color: #ce7852;
 .appDiv::first-letter 
 {
     color: #ce7852;
+    
 }
 .appDiv input {
     padding: 10px;
@@ -747,5 +748,6 @@ color: #ce7852;
     
 }
 .user::first-letter {
-    color:#ce7852
+    color:#ce7852;
+    border-bottom: 1px solid #ce7852;
 }
