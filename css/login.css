@@ -15,7 +15,7 @@
 }
 .app .leftContent 
 {
-    background-image: url('./images/loginBook.jpg');
+    background-image: url('../images/loginBook.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 1000px;
