@@ -81,7 +81,8 @@
 
 }
 .app  .rightContent  input[type="text"],
-.app  .rightContent  input[type="password"]
+.app  .rightContent  input[type="password"],
+.app  .rightContent  input[type="email"]
 {
     height: 40px;
     width: 100%;
