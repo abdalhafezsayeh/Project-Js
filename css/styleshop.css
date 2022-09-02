@@ -332,8 +332,16 @@ nav .app .useflex .text ul li a:hover {
 }
 
 .bodylist .all .rightcontent .head .rightsort select {
-    padding: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+.bodylist .all .rightcontent .head .rightsort .op
+{
+    text-transform: uppercase;
+    
 }
 
 .bodylist .all .rightcontent .appcontentbody .childcontentbody {

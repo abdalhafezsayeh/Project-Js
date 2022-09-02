@@ -166,7 +166,7 @@ document.addEventListener("click",function(e){
             var userAddressValued = document.querySelector(".userAddres")
                 // Format Use Email 
                  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        // Chick becouse On The Flay 
+        // Chick because On The Flay 
         if(e.target.classList.contains("userButton"))
         {
 
@@ -212,4 +212,66 @@ if(window.localStorage.getItem("username"))
 
 
 
+// Start Section Add To Cart 
+var buttonCart = document.getElementsByClassName("add") 
+var noti = document.getElementById("noti") 
+for(but of buttonCart)
+{   
+    but.addEventListener("click", function(e){
+    
+        var addNum = Number(noti.getAttribute("data-count"))
+        document.cookie = "item=" + addNum; // Set Cookie
+        noti.setAttribute("data-count", addNum + 1)
 
+        console.log(addNum)
+        console.log(noti.setAttribute("data-count", addNum + 1)) 
+
+        // Copy And Past Parent Button Calld (Add To Cart) Element 
+        var parentButton = e.target.parentNode;
+        var cloneParentButton = parentButton.cloneNode(true)
+
+        cloneParentButton.lastElementChild.classList.add("remove")
+        cloneParentButton.lastElementChild.innerHTML = "Remove" // Change Content Button 
+        
+
+        var ItemCart = document.querySelector(".ItemCart")
+        ItemCart.appendChild(cloneParentButton)
+
+    })
+
+}
+
+// Exite Window Cart With Element Span 
+var exit = document.querySelector(".exit")
+exit.addEventListener("click", function(e)
+{
+    // console.log(e.target.parentNode)
+    e.target.parentNode.classList.toggle("display");
+
+})
+
+// Open Window Cart Wuth Icon Cart From Navbar 
+var ItemCart = document.querySelector(".ItemCart")
+noti.addEventListener("click", function () {
+
+    console.log(ItemCart.classList.contains("ItemCart"))
+    if (ItemCart.classList.contains("ItemCart"))
+    {
+        ItemCart.classList.toggle("display")
+        console.log(ItemCart)
+    }
+
+  });
+
+// Start Remove Eelement From Section Add To Cart 
+document.addEventListener("click", function(e)
+{
+    if(e.target.classList.contains("remove"))
+    {
+        e.target.parentNode.remove()
+        var addNum = Number(noti.getAttribute("data-count"))
+        noti.setAttribute("data-count", addNum - 1)
+    }
+
+
+})
