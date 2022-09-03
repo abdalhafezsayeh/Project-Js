@@ -187,13 +187,13 @@ document.addEventListener("click",function(e){
                 // Remove OverLay And AppDiv 
                 document.querySelector(".overlay").remove()
                 document.querySelector(".appDiv").remove()
-                console.log("Valid") // Test 
+                // console.log("Valid") // Test 
 
 
             } else {
 
                 userNameValued.style.border = "1px solid red"
-                console.log("No Valid") // Test 
+                // console.log("No Valid") // Test 
                 alert("No Valid Data Tray Again") 
             }
         }
@@ -232,6 +232,12 @@ for(but of buttonCart)
 
         cloneParentButton.lastElementChild.classList.add("remove")
         cloneParentButton.lastElementChild.innerHTML = "Remove" // Change Content Button 
+
+        // Add Button buy now 
+        var buyNow = document.createElement("button")
+        buyNow.innerHTML = "Buy Now"
+        buyNow.setAttribute("class", "buy")
+        cloneParentButton.appendChild(buyNow)
         
 
         var ItemCart = document.querySelector(".ItemCart")
@@ -275,3 +281,17 @@ document.addEventListener("click", function(e)
 
 
 })
+
+
+
+// Funnction Log Out 
+var out = document.querySelector(".out i")
+
+out.addEventListener("click", function(e) {
+
+    // localStorage.clear() 
+    document.querySelector(".user").innerHTML = ""
+    window.location.href = "./login.html"
+})
+
+

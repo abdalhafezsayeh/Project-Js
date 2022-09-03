@@ -797,13 +797,13 @@ color: #ce7852;
     background-color: #ffffffeb;
     box-shadow: 0 0 10px #999;
     width: 60%;
-    height: 510px;
+    height: 520px;
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     justify-content: space-between;
-    transition: all .8s
+    transition: all 2s
 }
 .ItemCart .exit {
 
@@ -878,7 +878,7 @@ color: #ce7852;
     color: #777;
 }
 
-.ItemCart .one  .add 
+.ItemCart .one .add
 {
     padding: 3px 6px;
     cursor: pointer;
@@ -886,6 +886,16 @@ color: #ce7852;
     color: #FFF;
     background: #f44336;
 
+}
+
+.ItemCart .one .buy 
+{
+    padding: 3px 6px;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    background: #03a9f4;
+    margin-left: 20px;
 }
 .ItemCart.display 
 {
